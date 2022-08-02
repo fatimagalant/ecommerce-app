@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#Landing {
+  background-image: url("https://i.postimg.cc/zv7fWnyW/baptiste-buisson-gt-JXT2y-Rp-AE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
