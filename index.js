@@ -7,6 +7,7 @@ const userRoute = require("./routes/userRoute");
 const productsRoute = require("./routes/productsRoute");
 const categoriesRoute = require("./routes/categoriesRoute");
 const ordersRoute = require("./routes/ordersRoute");
+const ordersRoute = require("./routes/forgorpasswordRoute");
 
 // Configure Server
 const app = express(); // Initialize express as an app variable
@@ -28,6 +29,7 @@ app.use("/users", userRoute);
 app.use("/products", productsRoute);
 app.use("/categories", categoriesRoute);
 app.use("/orders", ordersRoute);
+app.use("/forgotpsw", forgotpasswordRoute);
 
 // Set up server to start listening for requests
 app.listen(app.get("port"), () => {
