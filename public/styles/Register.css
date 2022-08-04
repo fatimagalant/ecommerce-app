@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.demo {
+  padding-top: 20rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #3a3a3a, #6d4385);
+}
+.form-horizontal {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.form-horizontal .form-icon {
+  color: #fff;
+  font-size: 100px;
+  line-height: 85px;
+  margin: 0 0 13px;
+}
+.form-horizontal .title {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0 0 35px 0;
+}
+.form-horizontal .form-group {
+  margin: 0 0 10px;
+  position: relative;
+}
+.form-horizontal .input-icon {
+  color: #777;
+  font-size: 13px;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+}
+.form-horizontal .form-control {
+  color: #555;
+  background-color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  height: 37px;
+  padding: 2px 15px 2px 35px;
+  box-shadow: 0 0 5px -3px #333;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.form-horizontal .form-control:focus {
+  box-shadow: none;
+  border: none;
+}
+.form-horizontal .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.form-horizontal .btn {
+  color: #fff;
+  background-color: #222;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 202%;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.form-horizontal .btn:hover,
+.form-horizontal .btn:focus {
+  background-color: #222;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 2px #333;
+}
+.form-horizontal .form-options {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.form-horizontal .form-options li a {
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px;
+  display: block;
+  transition: all 0.3s ease;
+}
+.form-horizontal .form-options li a i {
+  font-size: 12px !important;
+}
+.form-horizontal .form-options li:last-child a {
+  margin: 0;
+}
+.form-horizontal .form-options li a:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
