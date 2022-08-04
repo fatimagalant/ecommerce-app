@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/public/styles/Login.css" />
+    <!-- <link rel="stylesheet" href="/public/styles/Login.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -16,49 +16,28 @@
   </head>
   <body>
     <section id="bg-login">
-      <div class="form-bg pt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
-              <form class="form-horizontal">
-                <div class="form-icon"><i class="fas fa-user-circle"></i></div>
-                <h3 class="title">Login Form</h3>
-                <div class="form-group">
-                  <span class="input-icon"><i class="far fa-user"></i></span>
-                  <input
-                    class="form-control"
-                    type="email"
-                    placeholder="email"
-                  />
-                </div>
-                <div class="form-group">
-                  <span class="input-icon"><i class="fas fa-lock"></i></span>
-                  <input
-                    class="form-control"
-                    type="password"
-                    placeholder="password"
-                  />
-                </div>
-                <button class="btn signin">Login</button>
-                <ul class="form-options">
-                  <li>
-                    <a
-                      href="/public/
-                    "
-                      >Forgot Username/Password?</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/public/Register.html"
-                      >Create New Account <i class="fa fa-arrow-right"></i
-                    ></a>
-                  </li>
-                </ul>
-              </form>
-            </div>
-          </div>
+      <h1>Login to your account</h1>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
         </div>
-      </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+      </form>
     </section>
   </body>
   <script>
