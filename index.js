@@ -14,6 +14,10 @@ app.set("port", process.env.PORT || 6969); // Set the port
 app.use(express.json()); // Enable the server to handle JSON requests
 app.use(cors()); // Dont let local development give errors
 
+app.use(express.static("public"));
+//Serves all the request which includes /images in the url from Images folder
+app.use("/index.html", express.static(__dirname + "/index.html"));
+
 // This is where we check URLs and Request methods to create functionality
 // GET '/' is always what will be displayed on the home page of your application
 app.get("/", (req, res) => {

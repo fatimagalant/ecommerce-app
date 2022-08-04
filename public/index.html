@@ -7,34 +7,9 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="users"></div>
+    <a href="Users.html">users</a>
+    <a href="Login.html">login</a>
+    <a href="Resgister.html">register</a>
+    <div id="users">users</div>
   </body>
-  <script>
-    let users = [];
-    const uContainer = document.querySelector("#users");
-    fetch("http://localhost:6969/users")
-      .then((res) => res.json())
-      .then((data) => {
-        users = data;
-        console.log(data);
-        showusers(users);
-      });
-    function showusers(users) {
-      uContainer.innerHTML = "";
-      users.forEach((user) => {
-        uContainer.innerHTML += `
-    <div class="user">
-        <th
-    <h2>${user.email}</h2>
-    <h2>${user.password} - ${user.full_name}</h2>
-    <h2>${user.phone}</h2>
-     <h2>${user.billing_address}</h2>
-      <h2>${user.default_shipping_address}</h2>
-       <h2>${user.country}</h2>
-        <h2>${user.user_type}</h2>
-    </div>
-        `;
-      });
-    }
-  </script>
 </html>
