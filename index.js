@@ -7,7 +7,6 @@ const userRoute = require("./routes/userRoute");
 const productsRoute = require("./routes/productsRoute");
 const categoriesRoute = require("./routes/categoriesRoute");
 const ordersRoute = require("./routes/ordersRoute");
-const ordersRoute = require("./routes/forgorpasswordRoute");
 
 // Configure Server
 const app = express(); // Initialize express as an app variable
@@ -21,15 +20,12 @@ app.use("/index.html", express.static(__dirname + "/index.html"));
 
 // This is where we check URLs and Request methods to create functionality
 // GET '/' is always what will be displayed on the home page of your application
-app.get("/", (req, res) => {
-  res.json({ msg: "Welcome" });
-});
+app.get("/", (req, res) => {});
 // Use individual routes when visiting these URLS
 app.use("/users", userRoute);
 app.use("/products", productsRoute);
 app.use("/categories", categoriesRoute);
 app.use("/orders", ordersRoute);
-app.use("/forgotpsw", forgotpasswordRoute);
 
 // Set up server to start listening for requests
 app.listen(app.get("port"), () => {
